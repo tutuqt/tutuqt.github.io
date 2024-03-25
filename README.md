@@ -9,10 +9,10 @@
     <nav>
         <img src="download.jpg" alt="" style="width: 100px;
         height: 100px">
-        <a href="index.html"></a>
-        <a href="index.html"></a>
-        <a href="index.html"></a>
-        <a href="index.html"></a>
+        <a href="index.html">Захиалах</a>
+        <a href="index.html">Тун удахгүй</a>
+        <a href="index.html">Бүртгүүлэх</a>
+        <a href="index.html">Миний бүртгэл</a>
     </nav>
 <section>
     <video src="download.jpg" style="width: 100px;
@@ -57,8 +57,12 @@
     <a href="index.html">Амттан</a>
     <article>
         <h3>Санал хүсэлт</h3>
-        <label for="text"><input type="text"></label>
-        <label for="email"><input type="email"></label>
+        <form action="/action_page.php">
+            <input type="text"  name="setgegdel" value="setgegdel">
+            <label for="email">Сэтгэгдэл</label><br>
+            <input type="email"  name="email" value="email">
+            <label for="email">Email</label><br>
+          </form>
         <button>Илгээх</button>
     </article>
     <address>
