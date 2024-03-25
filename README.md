@@ -9,16 +9,16 @@
     <nav>
         <img src="download.jpg" alt="" style="width: 100px;
         height: 100px">
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
+        <a href="index.html"></a>
+        <a href="index.html"></a>
+        <a href="index.html"></a>
+        <a href="index.html"></a>
     </nav>
 <section>
     <video src="download.jpg" style="width: 100px;
     height: 100px"></video>
     <h6>Ард явж буй киноны мэдээлэл</h6>
-    <a href="">Захиалах</a>
+    <a href="index.html">Захиалах</a>
 </section>
 <section>
     <h2>Манай дэлгэцнээ</h2>
@@ -57,8 +57,8 @@
     <a href="index.html">Амттан</a>
     <article>
         <h3>Санал хүсэлт</h3>
-        <input type="text"><label for="text"></label>
-        <input type="email"><label for="email"></label>
+        <label for="text"><input type="text"></label>
+        <label for="email"><input type="email"></label>
         <button>Илгээх</button>
     </article>
     <address>
