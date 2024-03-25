@@ -61,5 +61,11 @@
   
     <footer>Copyright2024</footer>
 </section>
+<style>
+    img{
+        width: 100px;
+        height: 100px;
+    }
+</style>
 </body>
 </html>
