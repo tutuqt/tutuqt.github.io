@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Prime cineplex">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+video{
+    width: 100%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+} 
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="./source/logo.jpg" alt="">
+        <a href="index.html">Захиалах</a>
+        <a href="index.html">Тун удахгүй</a>
+        <a href="index.html">Бүртгүүлэх</a>
+        <a href="index.html">Миний бүртгэл</a>
+    </nav>
+    <address>
+    Байршил <br>
+    Холбогдох утас <br>
+    Холбогдох и-мейл
+    </address>
+
+        
+  
+    <footer>Copyright2024</footer>
+</section>
+</body>
+<script>
+    document.addEventListener('scroll', () => {
+        const nav = document.querySelector('nav');
+        if(window.scrollY > 100 ){
+            nav.classList.add('scrolled');
+        }
+        else{
+            nav.classList.remove('scrolled');
+        }
+    })
+</script>
+</html>

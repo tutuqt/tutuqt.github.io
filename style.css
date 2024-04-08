@@ -1,0 +1,135 @@
+/* styles.css */
+:root{
+    --color-black-0: #000;
+    --color-black-1: #0c0c0c;
+    --color-blue-0: #009fff;
+    --color-blue-1: #200ea3;
+    --color-blue-2: #38419D;
+    --color-blue-3: #3887BE;
+    --color-blue-4: #52d3d8;
+    --color-white-0: #fff;
+    --size-default-0: 1rem;
+    --size-default-1: 1.2rem;
+    --size-default-2: 0.8rem;
+    --size-default-3: 24px;
+    --size-default-4: 20px;
+    --size-default-5: 16px;
+    --size-default-6: 12px;
+    --size-default-7: 4.5rem;
+    --size-default-8: 4rem;
+    --size-default-9: 5rem;
+    --font-default-0: 3rem;
+    --font-default-1: 2rem;
+    --font-default-2: 1.2rem;
+    --background-color-0: var(--color-black-0);
+    --background-color-1: var(--color-white-0);
+    --background-color-2: var(--color-blue-1);
+    --text-color-0:var(--color-white-0);
+    --text-color-1:var(--color-black-0);
+    --border-attribute-0: 1px solid var(--color-white-0); /*before hover*/
+    --border-attribute-1: 1px solid var(--color-black-0); /*before hover*/
+    --border-attribute-2: 2px solid var(--color-blue-0);  /*after hover*/
+    --border-radius-0: var(--size-default-3);   /*parent box*/
+    --border-radius-1: var(--size-default-4);   /*normal box*/
+    --border-radius-2: var(--size-default-5);   /*child box*/
+    --transform-attribute-0: scale(1);        /*before hover*/
+    --transform-attribute-1: scale(1.1);      /*after hover*/
+    --transition-attribute-0: 0.3s ease-in;
+    --position-left-0: 10%;    /*left indent*/
+    --padding-default-0: var(--size-default-6); /*small padding*/
+    --padding-default-1: var(--size-default-5); /*big padding*/
+    --margin-default-0: var(--size-default-6);  /*small margin*/
+    --margin-default-1:var(--size-default-5);   /*big margin*/
+    --margin-default-2: 10vh;
+    --margin-default-3: 10%;
+    --zindex-background: 1;
+    --zindex-article: 5;
+    --zindex-button: 10;
+    --zindex-navbar: 15;
+    --drop-shadow:drop-shadow(5px 5px 10px var(--color-black-1));
+}
+body{
+     background-color: var(--background-color-0);
+     color: var(--text-color-0); 
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--size-default-9);
+    position: sticky;
+    top:0;
+    padding-left: var(--position-left-0);
+    padding-right: var(--position-left-0);
+    background-color: var(--background-color-0);
+    border: var(--border-attribute-0);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    z-index: var(--zindex-navbar);
+    transition: background-color var(--transition-attribute-0);
+    & img{ 
+        height: 100%;
+        width: var(--size-default-9);
+    }
+    & a{
+        padding: var(--padding-default-0);
+        text-decoration: none;
+        background-color: var(--background-color-0);
+        color: var(--text-color-0);
+        font-size: var(--font-default-2);
+        border: var(--border-attribute-1);
+        border-radius: var(--border-radius-1);
+        transform: var(--transform-attribute-0);
+        transition: var(--transition-attribute-0);
+
+    }
+    & a:hover{
+        transform: var(--transform-attribute-1);
+        border: var(--border-attribute-2);
+    }
+}
+nav.scrolled{
+    background-color: var(--color-black-1);
+    height: var(--size-default-8);
+    border: var(--border-attribute-2);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    opacity: 0.9;
+}
+
+/* Make the navigation and images flex containers */
+section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; /* Align items vertically in the center */
+    justify-content: space-between; /* Distribute items with space between */
+    padding: 0, 10px, 0px, 10px; /* Add some padding for better spacing */
+    margin-left: var(--margin-default-3);
+     margin-right: var(--margin-default-3); 
+     width: 80%;
+    background-color: var(--background-color-0); /* Example background color */
+    & img{
+        width: 480px; /* Example width */
+        height: 250px; /* Maintain aspect ratio */
+        margin-top: 4%; /* Example margin */
+    } 
+}
+
+#Garchig{
+margin-top: 25px;
+margin-left: 30px;
+height: var(--size-default-9) ;
+font-size: 5rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: var(--margin-default-3);
+     margin-right: var(--margin-default-3); 
+     width: 80%;
+border: var(--border-attribute-1);
+border-bottom-color: aqua;
+display: flex;
+align-items: center;
+}

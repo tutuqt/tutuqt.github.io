@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcade</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<script>
+    document.addEventListener('scroll', () => {
+        const nav = document.querySelector('nav');
+        if(window.scrollY > 100 ){
+            nav.classList.add('scrolled');
+        }
+        else{
+            nav.classList.remove('scrolled');
+        }
+    })
+</script>
+<body>
+    <nav>
+        <img src="./source/logo.jpg" alt="">
+        <a href="./index.html">Захиалах</a>
+        <a href="./index.html">Тун удахгүй</a>
+        <a href="./index.html">Бүртгүүлэх</a>
+        <a href="./index.html">Миний бүртгэл</a>
+    </nav>
+
+    <div id="Garchig">Arcade</div>
+    <section>
+        <img src="./source/Arcade1.jpg" alt="">
+        <img src="./source/arcade2.jpg" alt="">
+        <img src="./source/arcade3.jpg" alt="">
+     </section>
+     <section>  
+        <img src="./source/arcade4.jpg" alt="">
+        <img src="./source/arcade5.jpg" alt="">
+        <img src="./source/arcade6.jpg" alt="">
+    </section>
+</body>
+</html>
