@@ -9,6 +9,17 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
+    <script>
+        document.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if(window.scrollY > 100 ){
+                nav.classList.add('scrolled');
+            }
+            else{
+                nav.classList.remove('scrolled');
+            }
+        })
+    </script>
     <style>
 video{
     width: 100%;
@@ -64,7 +75,6 @@ video{
         <img src="./source/download.jpg" alt="" >
         <button>Дэлгэрэнгүй</button>
     </article>
-    <article>
         <h3>Бусад</h3>
     <img src="./source/download.jpg" alt="" >
     <img src="./source/download.jpg" alt="" >
@@ -85,9 +95,9 @@ video{
     <article>
         <h3>Санал хүсэлт</h3>
         <form action="/action_page.php">
-            <input type="text"  name="setgegdel" value="">
-            <label for="email">Сэтгэгдэл</label><br>
-            <input type="email"  name="email" value="">
+            <input type="text"  id="setgegdel" value="">
+            <label for="setgegdel">Сэтгэгдэл</label><br>
+            <input type="email"  id="email" value="">
             <label for="email">Email</label><br>
           </form>
         <button>Илгээх</button>
@@ -104,15 +114,5 @@ video{
     <footer>Copyright2024</footer>
 </section>
 </body>
-<script>
-    document.addEventListener('scroll', () => {
-        const nav = document.querySelector('nav');
-        if(window.scrollY > 100 ){
-            nav.classList.add('scrolled');
-        }
-        else{
-            nav.classList.remove('scrolled');
-        }
-    })
-</script>
+
 </html>
