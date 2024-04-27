@@ -18,6 +18,7 @@
     --size-default-7: 4.5rem;
     --size-default-8: 4rem;
     --size-default-9: 5rem;
+    --size-default-10: 22rem;
     --font-default-0: 3rem;
     --font-default-1: 2rem;
     --font-default-2: 1.2rem;
@@ -99,21 +100,21 @@ nav.scrolled{
     opacity: 0.9;
 }
 
-/* Make the navigation and images flex containers */
+
 section {
     display: flex;
     flex-wrap: wrap;
-    align-items: center; /* Align items vertically in the center */
-    justify-content: space-between; /* Distribute items with space between */
-    padding: 0, 10px, 0px, 10px; /* Add some padding for better spacing */
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 0, 10px, 0px, 10px; 
     margin-left: var(--margin-default-3);
      margin-right: var(--margin-default-3); 
      width: 80%;
-    background-color: var(--background-color-0); /* Example background color */
+    background-color: var(--background-color-0); 
     & img{
-        width: 480px; /* Example width */
-        height: 250px; /* Maintain aspect ratio */
-        margin-top: 4%; /* Example margin */
+        width: var( --size-default-10); 
+        height: 250px; 
+        margin-top: 4%; 
     } 
 }
 
