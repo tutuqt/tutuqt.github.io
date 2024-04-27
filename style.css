@@ -56,7 +56,7 @@ body{
 nav{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items:   center;
     height: var(--size-default-9);
     position: sticky;
     top:0;
